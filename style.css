@@ -14,6 +14,7 @@ body {
     color: #fff;
     background-color: black;
     height: 66px;
+    width: 100%;
     align-items: center;
     font-size: 16px;
     justify-content: space-between;
@@ -183,7 +184,8 @@ body {
 
 .buttons {
     display: flex;
-    gap: 10px;
+    gap: 15px;
+    
 }
 
 .btn {
@@ -193,6 +195,7 @@ body {
     cursor: pointer;
     font-weight: bold;
     font-size: 20px;
+    font-family: "Roboto", serif;
 }
 
 .btn-primary {
@@ -216,7 +219,7 @@ body {
 }
 
 .notification .message {
-    margin: 0 130px;
+    margin: 0 136px;
 }
 
 .product-kayano31 {
@@ -232,7 +235,7 @@ body {
 .product-kayano31 .content-section{
     position: absolute;
     align-items: center;
-    margin-left: 135px;
+    margin-left: 136px;
 }
 
 .product-kayano31 .content-section button {
@@ -241,6 +244,8 @@ body {
     color: #001E60;
     font-size: 20px;
     border-radius: 25px;
+    font-family: "Roboto", serif;
+    font-weight: bold;
 }
 
 .product-kayano31 h2 {
@@ -252,4 +257,105 @@ body {
     font-size: 16px;
 }
 
+/* product-markdown  */
 
+.product-markdown {
+    height: 568px;
+    
+}
+
+.product-markdown .title {
+    margin: 75px 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    color: #001E63;
+}
+
+.product-markdown .content-section{
+    width: 100%;
+    display: flex;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.product-markdown .content-section .products{
+    border: 1px solid #969292;
+    border-radius: 12px;
+    padding: 14px 12px 39px 12px;
+    margin-left: 26px;
+}
+
+.product-markdown .content-section .products:nth-child(6){
+    margin-right: 26px;
+}
+
+.product-markdown .content-section .products .sale {
+    border-radius: 5px;
+    width: 44px;
+    height: 28px;
+    font-size: 13px;
+    font-family: "Roboto", serif;
+}
+
+.product-markdown .content-section .products .product-img{
+    padding-top: 23px;
+    padding-bottom: 54px;
+}
+
+.product-markdown .content-section .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+    cursor: pointer;            /* Hiển thị con trỏ khi hover */
+    transition: transform 0.2s ease;
+}
+
+.product-markdown .content-section .row i {
+    color: #817C7C;
+}
+
+.product-markdown .content-section .product-detail{
+    margin-left: 13px;
+}
+
+.product-markdown .content-section .product-name {
+    display: flex;
+    justify-content: center;
+    color: #461571;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.product-markdown .content-section .category{
+    color: #666666;
+    margin-bottom: 5px;
+}
+
+.product-markdown .content-section .feedback{
+    color: #615A5A;
+    margin-bottom: 3px;
+}
+
+.product-markdown .content-section .feedback i {
+    color: #7BF81C;
+}
+
+.product-markdown .content-section .new-price {
+    color: #CD0808;
+    font-size: 17px;
+    margin-bottom: 3px;
+}
+
+.product-markdown .content-section .old-price {
+    color: #A09898;
+    font-size: 13px;
+}
