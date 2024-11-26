@@ -18,30 +18,26 @@ body {
     align-items: center;
     font-size: 16px;
     justify-content: space-between;
+    padding: 0 72px;
+}
+
+.top-bar .left-info {
+    display: flex;
 }
 
 .top-bar a {
     color: #fff;
     text-decoration: none;
-    margin-left: 17px;
-    margin-right: 17px;
-}
-
-
-.left-info {
-    margin-left: 72px;
-    display: flex;
+    margin: 0 17px;
 }
 
 .left-info span {
     margin-left: 17px;
 }
 
-
 .right-info {
     display: flex;
     align-items: center;
-    margin-right: 72px;
 }
 
 .right-info .a4 {
@@ -60,16 +56,17 @@ body {
     font-size: 16px;
     color: #687C8F;
     justify-content: space-between;
-    margin: 0 72px;
+    padding: 0 72px;
 }
 
 .main-navbar .main-left {
     display: flex;
+    justify-content: space-between;
 }
 
 .main-navbar .main-left .logo {
-    width: 153px;
-    height: 51px;
+    width: 10.625%;
+    height: auto;
 }
 
 .main-navbar .menu {
@@ -86,14 +83,21 @@ body {
 .main-navbar .main-right {
     display: flex;
     align-items: center;
+    min-width: 355px;
+    width: 24.7048%;
+    justify-content: flex-end;
 }
 
 .main-navbar .search {
+    max-width: 201px;
+    min-width: 185px;
+    width: 56.6%;
     margin-right: 35px;
     display: flex;
+    justify-content: space-between;
     position: relative;
     align-items: center;
-    width: 202px;
+
 
 }
 
@@ -118,6 +122,8 @@ body {
 .main-navbar .sup-icon {
     display: flex;
     align-items: center;
+    width: 33.45%;
+    max-width: 119px;
 }
 
 .main-navbar .sup-icon i {
@@ -142,6 +148,7 @@ body {
 .sale {
     background-color: #F43636;
     display: flex;
+    width: 100%;
     height: 90px;
     font-size: 38px;
     align-items: center;
@@ -152,18 +159,19 @@ body {
 
 /* home-page */
 .home-page {
+    background-image: url(/Image/asics_homepage_desktop_hero_tile_novablast_5_teaser_102824.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
     display: flex;
     overflow: hidden;
     align-items: center;
-    height: 716px;
+    aspect-ratio: 1440 / 716;
 }
 
 .home-page .image-section {
-    background-image: url(/Image/asics_homepage_desktop_hero_tile_novablast_5_teaser_102824.png);
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: center;
     display: flex;
     justify-content: flex-end;
     position: relative;
@@ -173,7 +181,8 @@ body {
 .home-page .content-section {
     position: absolute;
     align-items: center;
-    margin-right: 80px;
+    width: 39.8%;
+    padding-right: 103px;
 }
 
 .home-page .content-section span {
@@ -221,6 +230,7 @@ body {
     background-color: #461571;
     color: #fff;
 }
+
 /* End  */
 
 
@@ -233,7 +243,7 @@ body {
 .notification {
     display: flex;
     justify-content: center;
-    margin-bottom: 49px;
+    /* margin-bottom: 49px; */
     margin-top: -20px;
 }
 
@@ -251,18 +261,21 @@ body {
 /* Sản phẩm KAYANO31  */
 .product-kayano31 {
     background-image: url(/Image/asics_homepage_desktop_thin_hero_k31_110124.png);
-    height: 450px;
     width: 100%;
     background-size: cover;
     position: relative;
     display: flex;
     align-items: center;
+    margin-top: 50px;
+    aspect-ratio: 1440 / 468;
+    overflow: hidden;
 }
 
 .product-kayano31 .content-section {
     position: absolute;
     align-items: center;
     padding-left: 136px;
+    width: 33%;
 }
 
 .product-kayano31 .content-section h2 {
@@ -290,6 +303,7 @@ body {
     font-family: "Roboto", sans-serif;
     margin-top: 28px;
 }
+
 /* End */
 
 
@@ -297,6 +311,7 @@ body {
 .sup-content-kayano31 {
     display: none;
 }
+
 /* End  */
 
 
@@ -312,6 +327,7 @@ body {
 .product-markdown {
     width: 100%;
     height: 568px;
+    
 }
 
 .product-markdown .title {
@@ -324,8 +340,14 @@ body {
     color: #001E63;
 }
 
+.product-markdown .content {
+    display: flex;
+    justify-content: center;
+}
+
 .product-markdown .content-section {
     width: 100%;
+    max-width: 1440px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -342,7 +364,7 @@ body {
 
 .product-markdown .content-section .products .sale {
     border-radius: 5px;
-    width: 44px;
+    width: 19.42%;
     height: 28px;
     font-size: 13px;
     font-weight: bold;
@@ -354,6 +376,11 @@ body {
     margin-bottom: 48px;
 }
 
+.product-markdown .content-section .products .product-img img {
+    width: 100%;
+    height: 100%;
+}
+
 .product-markdown .content-section .row {
     display: flex;
     align-items: center;
@@ -363,7 +390,6 @@ body {
     background-color: #fff;
     border-radius: 50%;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    /* Đổ bóng */
     cursor: pointer;
     transition: transform 0.2s ease;
 }
@@ -373,7 +399,7 @@ body {
 }
 
 .product-markdown .content-section .product-detail {
-    margin-left: 13px;
+    padding-left: 13px;
 }
 
 .product-markdown .content-section .product-name {
@@ -415,8 +441,8 @@ body {
 
 /* GEL-1090  */
 .product-gel1090 .img-section {
-    height: 450px;
     width: 100%;
+    aspect-ratio: 1440 / 450;
     background-image: url(/Image/asics_homepage_desktop_hero_gel_1090_v2_110124.png);
     background-size: cover;
     background-position: center;
@@ -431,11 +457,12 @@ body {
     font-weight: bold;
     color: #000;
 }
+
 .product-gel1090 .img-section .content-section h2:last-child {
     margin-top: 5px;
 }
 
-.product-gel1090 .img-section .content-section .description p{
+.product-gel1090 .img-section .content-section .description p {
     font-size: 16px;
     margin-top: 12px;
 }
@@ -444,12 +471,13 @@ body {
     position: absolute;
     align-items: center;
     padding: 0 80px;
+    width: 48%;
 }
 
 .product-gel1090 .img-section .content-section .buttons {
     display: flex;
     gap: 15px;
-    margin-top: 28px;
+    margin-top: 20px;
 }
 
 .product-gel1090 .img-section .content-section .btn {
@@ -471,6 +499,7 @@ body {
     background-color: #0B0510;
     color: #fff;
 }
+
 /* End GEL-1090 */
 
 
@@ -510,12 +539,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 339px;
-    height: 330px;
+    width: 23.54%;
+    height: 51.886%;
+    min-height: 330px;
     background-color: #FFFDFD;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 17px;
     margin-right: 47px;
+    padding: 0px 32px 29px 28px;
 }
 
 .feedbacks .feedback-content .content:last-child {
@@ -527,15 +558,31 @@ body {
     justify-content: flex-start;
     color: #661FA5;
     font-size: 48px;
-    margin-left: 42px;
+    margin-left: 14px;
     margin-top: -17px;
 }
 
 .feedbacks .feedback-content .content .person-feedback {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 32px;
+}
+
+.feedbacks .feedback-content .content .person-feedback .avatar {
+    width: 25%;
+    max-width: 68px;
+    max-height: 68px;
+    height: auto;
+}
+
+.feedbacks .feedback-content .content .person-feedback .avatar img {
+    width: 100%;
+    height: 100%;
+}
+
+.feedbacks .feedback-content .content .person-feedback .person-name p {
+    font-size: 16px;
+    color: #000;
 }
 
 .feedbacks .feedback-content .content .person-feedback .person-name p:last-child {
@@ -584,9 +631,10 @@ footer {
 }
 
 .footer-content {
+    margin-right: 30px;
     width: 80%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .footer-section {
@@ -627,6 +675,11 @@ footer {
     align-items: center;
 }
 
+.logo-section img{
+    width: 100%;
+    background-size: cover;
+}
+
 /* End Footer  */
 
 
@@ -661,6 +714,338 @@ footer {
 /* End Chat-box */
 
 
+@media (max-width: 1276px) {
+
+    /* Thanh menu chính */
+    .main-navbar .main-left {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-navbar .menu {
+        display: none;
+    }
+
+    /* End thanh menu chính  */
+
+
+    /* products */
+    .product-markdown .content-section .products:nth-child(5) {
+        display: none;
+    }
+
+    /* End product */
+
+
+    /* home-page  */
+    .home-page .content-section h2 {
+        font-size: 22px;
+        font-weight: bold;
+        color: #001E62;
+    }
+
+    .home-page .content-section p {
+        font-size: 18px;
+        color: #001E62;
+        margin-top: 16px;
+    }
+
+    .home-page .buttons {
+        gap: 12px;
+        margin-top: 24px;
+    }
+
+    .home-page .btn {
+        border-radius: 18px;
+        font-size: 16px;
+    }
+
+    /* End  */
+
+    /* Thanh phụ đề  */
+    .notification {
+        margin-top: -15px;
+    }
+
+    /* End  */
+
+
+}
+
+@media (max-width: 1176px) {
+
+    /* Thanh trên cùng  */
+    .right-info .span1,
+    .right-info .span2 {
+        display: none;
+    }
+
+    .right-info .a1,
+    .right-info .a2 {
+        display: none;
+    }
+
+    /* End thanh trên cùng  */
+
+
+    /* Thanh sale */
+    .sale {
+        height: 57px;
+        font-size: 30px;
+    }
+
+    /* End Thanh sale */
+
+
+    /* home-page */
+    .home-page .content-section p {
+        font-size: 18px;
+        color: #001E62;
+        margin-top: 16px;
+    }
+
+    .home-page .content-section .p2 {
+        margin-top: 10px;
+    }
+
+    /* End Home page  */
+
+
+    /* Thanh phụ đề  */
+    .notification {
+        margin-top: -10px;
+    }
+
+    .notification .message {
+        font-size: 15px;
+    }
+
+    /* End Thanh phụ đề*/
+
+    /* Sản phẩm KAYANO31  */
+    .product-kayano31 {
+        margin-top: 40px;
+    }
+
+    .product-kayano31 .content-section {
+        position: absolute;
+        align-items: center;
+        padding-left: 100px;
+        width: 33%;
+    }
+
+    .product-kayano31 .content-section h2 {
+        font-size: 20px;
+    }
+
+    .product-kayano31 p {
+        color: #fff;
+        font-size: 14px;
+        margin-top: 12px;
+    }
+
+    .product-kayano31 .content-section button {
+        color: #001E60;
+        font-size: 16px;
+        border-radius: 24px;
+        padding: 9px 18px;
+        margin-top: 20px;
+    }
+
+
+    /* Feedback  */
+    .feedbacks .feedback-content .content .person-feedback .person-name p {
+        font-size: 14px;
+    }
+
+    .feedbacks .feedback-content .content .person-feedback .person-name p:last-child {
+        font-size: 10px;
+    }
+
+    /* End Feedback */
+
+
+    /* Footer  */
+    .footer-section:nth-child(4) {
+        display: none;
+    }
+
+    .footer-section h2 {
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+
+    /* End Footer  */
+}
+
+
+@media (max-width: 1050px) {
+
+    .right-info .span1,
+    .right-info .span2 {
+        display: none;
+    }
+
+    .right-info .a1,
+    .right-info .a2 {
+        display: none;
+    }
+
+    /* home-page */
+    .home-page .content-section h2 {
+        font-size: 18px;
+    }
+
+    .home-page .content-section p {
+        font-size: 14px;
+        color: #001E62;
+        margin-top: 10px;
+    }
+
+    .home-page .content-section .p2 {
+        margin-top: 5px;
+    }
+
+    .home-page .buttons {
+        display: flex;
+        gap: 10px;
+
+    }
+
+    .home-page .btn {
+        border-radius: 24px;
+        font-size: 12px;
+    }
+
+    /* End  */
+
+
+    /* Sản phẩm KAYANO31  */
+    .product-kayano31 {
+        margin-top: 35px;
+    }
+
+    .product-kayano31 .content-section {
+        padding-left: 90px;
+        width: 33%;
+    }
+
+    .product-kayano31 .content-section h2 {
+        font-size: 18px;
+    }
+
+    .product-kayano31 .content-section button {
+        color: #001E60;
+        font-size: 16px;
+        border-radius: 24px;
+        padding: 9px 18px;
+        margin-top: 20px;
+    }
+
+
+    /* products */
+    .product-markdown .content-section .products:nth-child(4),
+    .product-markdown .content-section .products:nth-child(5) {
+        display: none;
+    }
+
+    /* End product */
+
+
+    /* GEL-1090  */
+
+    .product-gel1090 .img-section .content-section h2 {
+        font-size: 18px;
+    }
+
+    .product-gel1090 .img-section .content-section h2:last-child {
+        margin-top: 5px;
+    }
+
+    .product-gel1090 .img-section .content-section .description p {
+        font-size: 12px;
+        margin-top: 12px;
+    }
+
+    .product-gel1090 .img-section .content-section {
+        position: absolute;
+        align-items: center;
+        padding: 0 80px;
+        width: 48.1%;
+    }
+
+    .product-gel1090 .img-section .content-section .buttons {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .product-gel1090 .img-section .content-section .btn {
+        border-radius: 24px;
+        font-size: 16px;
+
+    }
+
+
+    /* Feedback  */
+    .feedbacks .feedback-content .content .person-feedback .person-name p {
+        font-size: 11px;
+    }
+
+    .feedbacks .feedback-content .content .person-feedback .person-name p:last-child {
+        font-size: 8px;
+    }
+
+    /* End Feedback */
+
+
+
+    /* Footer  */
+
+    /* .footer-section h2 {
+        font-size: 20px;
+    }
+
+    footer .footer-section:nth-child(4) {
+        display: none;
+    } */
+
+    /* End Footer  */
+
+}
+
+
+@media (max-width: 900px) {
+
+    /*Feedback  */
+    .feedbacks .feedback-content .content .person-feedback .person-name p {
+        font-size: 10px;
+    }
+
+    .feedbacks .feedback-content .content .person-feedback .person-name p:last-child {
+        font-size: 6px;
+    }
+
+    .feedbacks .feedback-content .content .person-feedback .avatar img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .feedbacks .row-next i {
+        font-size: 12px;
+        margin-right: 5px;
+    }
+
+    /* End Feedback  */
+    
+    .footer-section h2 {
+        font-size: 20px;
+    }
+    
+}
+
+
+
 /*Ipad dọc(834 x 1024)*/
 /* tablet model */
 @media (max-width: 835px) {
@@ -669,17 +1054,16 @@ footer {
     .top-bar {
         height: ;
         font-size: 14px;
+        padding: 0 29px;
     }
 
     .left-info {
-        margin-left: 29px;
         display: flex;
     }
 
     .right-info {
         display: flex;
         align-items: center;
-        margin-right: 29px;
     }
 
     .right-info .a4 {
@@ -706,7 +1090,7 @@ footer {
     /* Thanh menu chính */
     .main-navbar {
         height: 77px;
-        margin: 0 50px;
+        padding: 0 50px;
     }
 
     .main-navbar .menu {
@@ -719,9 +1103,15 @@ footer {
         color: #687C8F;
     }
 
-    .main-navbar .search {
-        width: 300px;
+    .main-navbar .main-right {
+        width: 54.4%;
     }
+
+    .main-navbar .main-right .search {
+        max-width: 300px;
+    }
+
+    .main-navbar .main-right .sup-icon {}
 
     .sup-main-navbar {
         display: none;
@@ -740,78 +1130,66 @@ footer {
 
 
     /* home-page */
-
-    .home-page {
-        height: 354px;
-    }
-    
-    .home-page .image-section {
-        background-image: url(/Image/asics_homepage_desktop_hero_tile_novablast_5_teaser_102824.png);
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        justify-content: flex-end;
-        position: relative;
-        align-items: center;
-    }
-    
     .home-page .content-section {
         position: absolute;
         align-items: center;
-        margin-right: 80px;
+        width: 39.8%;
+        padding-right: 80px;
     }
-    
-    
+
     .home-page .content-section h2 {
         font-size: 16px;
     }
-    
+
     .home-page .content-section p {
         font-size: 12px;
         color: #001E62;
-        margin-top: 6px;
+        margin-top: 8px;
     }
 
     .home-page .content-section .p2 {
-        margin-top: 3px;
+        margin-top: 5px;
     }
-    
+
+
     .home-page .buttons {
         display: flex;
-        gap: 10px;
-    
+        gap: 12px;
+        margin-top: 20px;
     }
-    
+
+    .home-page .btn {
+        padding: 8px 15px;
+        border: none;
+        border-radius: 24px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 16px;
+        font-family: "Roboto", sans-serif;
+    }
+
     .home-page .btn {
         border-radius: 24px;
         font-size: 12px;
     }
+
     /* End-home-page */
 
 
-    /* sup-content-mobile  */
+    /* Thanh phụ đề  */
     .notification {
-        margin-top: 18px;
+        margin-top: 5px;
         margin-bottom: 38px;
     }
 
-    .notification i {
-        font-size: 20px;
-    }
-
     .notification .message {
-        font-size: 12px;
+        margin: 0 58px;
     }
 
-    /* End sup-content-mobile  */
+    /* End Thanh phụ đề*/
 
 
     /* Sản phẩm KAYANO31 */
-    .product-kayano31 {
-        height: 260px;
-    }
 
     .product-kayano31 .content-section {
         padding-left: 80px;
@@ -866,7 +1244,7 @@ footer {
 
     /* GEL-1090 */
     .product-gel1090 .img-section {
-        height: 245px;
+        /* height: 245px; */
     }
 
     .product-gel1090 .img-section .content-section {
@@ -884,21 +1262,22 @@ footer {
         margin-top: 0px;
     }
 
-    .product-gel1090 .img-section .content-section .description p{
+    .product-gel1090 .img-section .content-section .description p {
         font-size: 10px;
         margin-top: 10px;
         margin-bottom: 0px;
     }
-    
+
     .product-gel1090 .img-section .content-section .buttons {
         display: flex;
         gap: 10px;
         margin-top: 19px;
     }
-    
+
     .product-gel1090 .img-section .content-section .btn {
         font-size: 12px;
     }
+
     /* End GEL-1090 */
 
 
@@ -906,6 +1285,7 @@ footer {
     .sup-content-gel1090 {
         display: none;
     }
+
     /* End */
 
 
@@ -914,32 +1294,24 @@ footer {
         height: 375px;
     }
 
-    .feedbacks .feedback-content {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 40px;
-    }
-
     .feedbacks .feedback-title p {
         margin: 40px 0;
         font-size: 24px;
     }
 
     .feedbacks .feedback-content .content {
-        width: 208px;
-        height: 175px;
+        width: 24.94%;
+        height: 46.667%;
+        min-height: 175px;
         border-radius: 17px;
-        margin-right: 47px;
+        margin-right: 19px;
+        padding: 0px 9px 16px 23px;
     }
 
     .feedbacks .feedback-content .content .top-icon {
         font-size: 36px;
-        margin-left: 30px;
+        margin-left: 0;
         margin-top: -13px;
-    }
-
-    .feedbacks .feedback-content .content .person-feedback {
-        margin-bottom: 15px;
     }
 
     .feedbacks .feedback-content .content .person-feedback .person-name p {
@@ -952,17 +1324,24 @@ footer {
         margin-top: 3px;
     }
 
-    .feedbacks .feedback-content .content .person-feedback .avatar img {
+    .feedbacks .feedback-content .content .person-feedback .avatar {
         width: 42px;
         height: 42px;
     }
+
+    .feedbacks .feedback-content .content .person-feedback .avatar img {
+        width: 100%;
+        height: 100%;
+    }
+
 
     .feedbacks .row-next i {
         font-size: 12px;
         margin-right: 5px;
     }
 
-    /* End Feedback  */
+
+
 
 
     /* Footer  */
@@ -973,9 +1352,10 @@ footer {
         height: 218px;
         background-color: #030303;
         color: #fff;
-        padding: 20px 25px;
+        padding: 20px 35px;
         font-family: 'Inter', sans-serif;
     }
+
     .footer-section h2 {
         font-size: 16px;
     }
@@ -996,21 +1376,196 @@ footer {
     /* End Footer  */
 }
 
+@media (max-width: 821px) {
+
+    /* product-markdown  */
+    .product-markdown {
+        height: 420px;
+    }
+
+    .product-markdown .content-section .products .product-img {
+        width: 150px;
+        height: 100px;
+        margin-top: 16px;
+        margin-bottom: 32px;
+    }
+
+    .product-markdown .content-section .products .product-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .product-markdown .content-section .row {
+        width: 22px;
+        height: 22px;
+    }
+
+    .product-markdown .content-section .product-detail {
+        padding-left: 5px
+    }
+
+    .product-markdown .content-section .product-name {
+        font-size: 12px;
+        margin-top: 21px;
+    }
+
+    .product-markdown .content-section .category {
+        font-size: 9px;
+    }
+
+    .product-markdown .content-section .feedback {
+        font-size: 9px;
+    }
+
+    .product-markdown .content-section .feedback i {
+        font-size: 9px;
+    }
+
+    .product-markdown .content-section .new-price {
+        font-size: 9px;
+    }
+
+    .product-markdown .content-section .old-price {
+        font-size: 7px;
+    }
+
+    .product-markdown .content-section .products:nth-child(4),
+    .product-markdown .content-section .products:nth-child(5) {
+        display: none;
+    }
+
+}
 
 
 
-/*Mobile(390)*/
+@media (max-width: 800px) {
+
+    /*Feedback  */
+    .feedbacks .feedback-content .content .person-feedback .person-name p {
+        font-size: 10px;
+    }
+
+    .feedbacks .feedback-content .content .person-feedback .person-name p:last-child {
+        font-size: 6px;
+    }
+
+    /* End Feedback  */
+}
+
+
+
+@media (max-width: 720px) {
+
+    /* Sản phẩm KAYANO31 */
+    .product-kayano31 .content-section {
+        padding-left: 80px;
+    }
+
+    .product-kayano31 .content-section h2 {
+        font-size: 16px;
+    }
+
+    .product-kayano31 .content-section p {
+        font-size: 10px;
+    }
+
+    .product-kayano31 .content-section button {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+    .product-kayano31 h2 {
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .product-kayano31 p {
+        color: #fff;
+        font-size: 12px;
+        margin-top: 8px;
+    }
+
+    /* End sản phẩm KAYANO31 */
+
+
+    /* Sản phẩm  */
+    .product-markdown {
+        width: 100%;
+        height: 340px;
+    }
+
+    .product-markdown .title {
+        margin: 35px 0;
+        font-size: 20px;
+    }
+
+    .product-markdown .content-section .products {
+        padding: 15px 9px 22px 9px;
+    }
+
+
+    .product-markdown .content-section .products .sale {
+        margin-top: 0;
+        width: 17px;
+        height: 9px;
+        font-size: 6px;
+        border-radius: 4px;
+        padding: 2px;
+    }
+
+    .product-markdown .content-section .products .product-img {
+        width: 120px;
+        height: 75px;
+        margin-top: 7px;
+        margin-bottom: 0;
+    }
+
+    /* End sản phẩm */
+
+
+    /*Feedback  */
+    .feedbacks .feedback-content .content .person-feedback .person-name p {
+        font-size: 10px;
+    }
+
+    .feedbacks .feedback-content .content .person-feedback .person-name p:last-child {
+        font-size: 6px;
+    }
+
+    .feedbacks .feedback-content .content .person-feedback .avatar img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .feedbacks .row-next i {
+        font-size: 12px;
+        margin-right: 5px;
+    }
+
+    /* End Feedback  */
+}
+
+@media (max-width: 700px) {
+
+    /*Feedback  */
+    .feedbacks .feedback-content .content .person-feedback .person-name p {
+        font-size: 9px;
+    }
+
+    .feedbacks .feedback-content .content .person-feedback .person-name p:last-child {
+        font-size: 6px;
+    }
+
+    /* End Feedback  */
+}
+
+/*Mobile(650)*/
 /* Mobile model */
-@media (max-width: 391px) {
+@media (max-width: 650px) {
 
     /* Thanh thông tin trên cùng  */
     .top-bar {
-        height: 42px;
-        font-size: 12px;
-    }
-
-    .left-info {
-        margin-left: 14px;
+        padding: 0 30px;
     }
 
     .left-info span,
@@ -1018,8 +1573,436 @@ footer {
         display: none;
     }
 
-    .right-info {
-        margin-right: 14px;
+    .right-info a {
+        margin-right: 0;
+    }
+
+    .right-info span {
+        display: none;
+    }
+
+    .right-info .a4,
+    .right-info .a2,
+    .right-info .a4 {
+        display: none;
+    }
+
+    /*End Thanh thông tin trên cùng */
+
+
+    /* Thanh sale  */
+    .sale {
+        font-size: 16px;
+    }
+
+    /* End Thanh sale  */
+
+
+    /* Thanh menu chính */
+    .main-navbar {
+        height: 77px;
+        justify-content: center;
+    }
+
+    .main-navbar .menu {
+        display: none;
+    }
+
+    .main-navbar .main-right {
+        display: none;
+    }
+
+    /* Thêm thanh tìm kiếm màn mobile */
+    .sup-main-navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 80px;
+    }
+
+    .sup-main-navbar .search {
+        display: flex;
+        position: relative;
+        align-items: center;
+        width: 88%;
+        height: 52px;
+        margin-right: 20px;
+    }
+
+    .sup-main-navbar .search input {
+        width: 100%;
+        height: 100%;
+        padding: 10px 40px 10px 15px;
+        background-color: #D9D9D9;
+        border: 1px solid #D9D9D9;
+        border-radius: 12px;
+        color: #857E8C;
+        font-size: 16px;
+    }
+
+    .sup-main-navbar .search .fa-magnifying-glass {
+        position: absolute;
+        right: 15px;
+        color: #5a6b7b;
+        font-size: 20px;
+    }
+
+    .sup-main-navbar .sup-icon {
+        display: flex;
+        align-items: center;
+    }
+
+    .sup-main-navbar .sup-icon i {
+        font-size: 35px;
+    }
+
+    /* End thêm thanh tìm kiếm màn mobile */
+
+
+    /* Thanh sale  */
+    .sale {
+        margin-top: 21px;
+    }
+
+
+    /* home-page */
+    .home-page {
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+    }
+
+    .home-page .content-section {
+        display: none;
+    }
+
+    /* End home-page  */
+
+
+    /* Thêm content cho home-page  */
+    .sup-content-homepage {
+        display: block;
+        padding: 0 14px;
+    }
+
+    .sup-content-homepage h2 {
+        font-size: 16px;
+        font-weight: bold;
+        color: #001E62;
+    }
+
+    .sup-content-homepage p {
+        margin-top: 8px;
+        font-size: 12px;
+        color: #001E62;
+    }
+
+    .sup-content-homepage span {
+        font-weight: bold;
+    }
+
+    .sup-content-homepage .buttons {
+        margin-top: 19px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sup-content-homepage .buttons:last-child {
+        margin-top: 12px;
+    }
+
+    .sup-content-homepage .buttons .button {
+        width: 252px;
+        height: 31px;
+        border-radius: 24px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 15px;
+        font-family: "Roboto", sans-serif;
+        background-color: #461571;
+        color: white;
+        border: none;
+    }
+
+    /* End content cho home-page  */
+
+
+    /* Thanh phụ đề  */
+    .notification {
+        display: none;
+    }
+
+    /* KAYANO31 */
+    .product-kayano31 {
+        margin-top: 23px;
+    }
+
+    .product-kayano31 .content-section {
+        display: none;
+    }
+
+    /* End KAYANO31 */
+
+    /* sup-content-kayano31 màn mobile */
+    .sup-content-kayano31 {
+        display: block;
+        padding: 0 25px;
+    }
+
+    .sup-content-kayano31 h2 {
+        font-size: 16px;
+        margin-top: 33px;
+        color: #001E60;
+    }
+
+    .sup-content-kayano31 .p1 {
+        color: #001E60;
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: 4px;
+        margin-bottom: 6px;
+    }
+
+    .sup-content-kayano31 .p2,
+    .sup-content-kayano31 .p3 {
+        font-size: 10px;
+        color: #001E60;
+    }
+
+    .sup-content-kayano31 .buttons {
+        margin-top: 19px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sup-content-kayano31 .button {
+        width: 252px;
+        height: 31px;
+        border-radius: 24px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 15px;
+        font-family: "Roboto", sans-serif;
+        background-color: #461571;
+        color: white;
+        border: none;
+    }
+
+    /* End sup-content-kayano31 màn mobile */
+
+    /* Thanh bổ trợ cho .product-kayano31  */
+    .sup-notification-kayano31 {
+        display: flex;
+        justify-content: center;
+        margin-top: 37px;
+    }
+
+    .sup-notification-kayano31 {
+        display: flex;
+        justify-content: center;
+        /* margin-bottom: 48px; */
+    }
+
+    .sup-notification-kayano31 i {
+        font-size: 12px;
+    }
+
+    .sup-notification-kayano31 .message {
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        margin: 0 36px;
+    }
+
+    /* End  */
+
+
+    /* GEL-1090  */
+    .product-gel1090 .img-section .content-section {
+        display: none;
+    }
+
+    /* End GEL-1090  */
+
+
+    /* Thêm content cho GEL-1090  */
+    .sup-content-gel1090 {
+        display: block;
+        width: 100%;
+        height: 211px;
+        background-color: #EBE8E8;
+        padding: 32px 14px;
+    }
+
+    .sup-content-gel1090 .title h2 {
+        font-size: 16px;
+    }
+
+    .sup-content-gel1090 .description {
+        font-size: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .sup-content-gel1090 .buttons {
+        margin-top: 19px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sup-content-gel1090 .buttons:last-child {
+        margin-top: 12px;
+    }
+
+    .sup-content-gel1090 .buttons .button {
+        width: 252px;
+        height: 31px;
+        border-radius: 24px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 15px;
+        font-family: "Roboto", sans-serif;
+        background-color: #0B0510;
+        color: white;
+        border: none;
+    }
+
+    /* End thêm content cho GEL-1090 */
+
+
+    /*Feedback  */
+    .feedbacks .feedback-content {
+        margin-bottom: 42px;
+    }
+
+    .feedbacks .feedback-content .content:nth-child(2) {
+        margin-right: 0;
+    }
+
+    .feedbacks .feedback-content .content:last-child {
+        display: none;
+    }
+
+    /* End Feedback  */
+
+
+    /* Footer  */
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: flex-end;
+        height: 425px;
+        background-color: #030303;
+        color: #fff;
+        padding: 0 40px;
+    }
+
+
+    .footer-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .footer .footer-content .footer-section {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+
+    .footer .footer-content .footer-section:last-child {
+        display: none;
+    }
+
+    .footer .footer-content .footer-section h2 {
+        font-size: 16px;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    .footer .footer-content .footer-section ul {
+        margin-top: 17px;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .footer .footer-content .footer-section ul li {
+        margin: 2px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer .footer-content .footer-section ul li a {
+        font-size: 8px;
+    }
+
+    .footer .footer-content .logo-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer .footer-content .logo-section img {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    /* Footer  */
+    /* .footer-section h2 {
+        font-size: 20px;
+    } */
+
+    footer .footer-section:nth-child(3) {
+        display: none;
+    }
+
+    /* End Footer  */
+}
+
+
+@media (max-width: 550px) {
+
+    /* Sản phẩm  */
+    .product-markdown .content-section {
+        padding: 0 20px;
+    }
+
+    .product-markdown .content-section .products:nth-child(3),
+    .product-markdown .content-section .products:nth-child(4),
+    .product-markdown .content-section .products:nth-child(5) {
+        display: none;
+    }
+
+    /* End sản phẩm */
+}
+
+
+/*Mobile(405)*/
+/* Mobile model */
+@media (max-width: 405px) {
+
+    /* Thanh thông tin trên cùng  */
+    .top-bar {
+        height: 42px;
+        font-size: 12px;
+        padding: 0 20px;
+    }
+
+    .left-info span,
+    .left-info a {
+        display: none;
     }
 
     .right-info a {
@@ -1053,7 +2036,7 @@ footer {
     .main-navbar .main-left .logo img {
         width: 100%;
         height: 100%;
-        
+
     }
 
     .main-navbar .menu {
@@ -1066,6 +2049,20 @@ footer {
 
     /* End thanh menu chính */
 
+    /* home-page */
+    .home-page {
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+        height: 332px;
+    }
+
+    .home-page .content-section {
+        display: none;
+    }
+
+    /* End home-page */
 
     /* Thêm thanh tìm kiếm màn mobile */
     .sup-main-navbar {
@@ -1116,81 +2113,22 @@ footer {
     .sale {
         height: 53px;
         font-size: 14px;
-        margin-top: 21px;
+        padding: 0 20px;
     }
 
     /* End thanh sale  */
 
 
-    /* home-page */
-    .home-page {
-        width: 100%;
-        display: flex;
-        overflow: hidden;
-        align-items: center;
-        height: 332px;
-    }
-
-    .home-page .content-section {
-        display: none;
-    }
-
-    /* End home-page  */
-
-
     /* Thêm content cho home-page  */
-    .sup-content-homepage {
-        display: block;
-        padding: 0 14px;
-    }
-
     .sup-content-homepage h2 {
         font-size: 12px;
-        font-weight: bold;
-        color: #001E62;
     }
 
     .sup-content-homepage p {
-        margin-top: 8px;
         font-size: 9px;
-        line-height: 1.5;
-        color: #001E62;
-    }
-
-    .sup-content-homepage span {
-        font-weight: bold;
-    }
-
-    .sup-content-homepage .buttons {
-        margin-top: 19px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .sup-content-homepage .buttons:last-child {
-        margin-top: 12px;
-    }
-
-    .sup-content-homepage .buttons .button {
-        width: 252px;
-        height: 31px;
-        border-radius: 24px;
-        cursor: pointer;
-        font-weight: bold;
-        font-size: 15px;
-        font-family: "Roboto", sans-serif;
-        background-color: #461571;
-        color: white;
-        border: none;
     }
 
     /* End content cho home-page  */
-
-
-    /* Thanh phụ đề  */
-    .notification {
-        display: none;
-    }
 
 
     /* KAYANO31 */
@@ -1256,27 +2194,9 @@ footer {
 
 
     /* Thanh bổ trợ cho .product-kayano31  */
-    .sup-notification-kayano31 {
-        display: flex;
-        justify-content: center;
-        margin-top: 37px;
-    }
-
-    .sup-notification-kayano31 {
-        display: flex;
-        justify-content: center;
-        /* margin-bottom: 48px; */
-    }
-
-    .sup-notification-kayano31 i {
-        font-size: 12px;
-    }
-
     .sup-notification-kayano31 .message {
-        font-size: 8px;
-        display: flex;
-        align-items: center;
-        margin: 0 36px;
+        font-size: 6px;
+        margin: 0 20px;
     }
 
     /* End  */
@@ -1377,53 +2297,9 @@ footer {
         margin-top: 20px;
     }
 
-    .product-gel1090 .img-section .content-section {
-        display: none;
-    }
     /* End GEL-1090  */
 
-
     /* Thêm content cho GEL-1090  */
-    .sup-content-gel1090{
-        display: block;
-        width: 100%;
-        height: 211px;
-        background-color: #EBE8E8;
-        padding: 32px 14px;
-    }
-
-    .sup-content-gel1090 .title h2{
-        font-size: 16px;
-    }
-
-    .sup-content-gel1090 .description {
-        font-size: 10px;
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-
-    .sup-content-gel1090 .buttons {
-        margin-top: 19px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .sup-content-gel1090 .buttons:last-child {
-        margin-top: 12px;
-    }
-
-    .sup-content-gel1090 .buttons .button {
-        width: 252px;
-        height: 31px;
-        border-radius: 24px;
-        cursor: pointer;
-        font-weight: bold;
-        font-size: 15px;
-        font-family: "Roboto", sans-serif;
-        background-color: #0B0510;
-        color: white;
-        border: none;
-    }
     /* End thêm content cho GEL-1090 */
 
 
@@ -1436,17 +2312,18 @@ footer {
 
     .feedbacks .feedback-title p {
         margin-top: 49px;
-        font-size: 21px;
+        font-size: 16px;
         margin-bottom: 0;
     }
 
     .feedbacks .feedback-content .content {
         position: relative;
         justify-content: flex-end;
-        width: 137px;
+        width: 35.15%;
         height: 207px;
         margin-top: 61px;
         margin-right: 0px;
+        padding: 0 0 18px 0;
     }
 
     .feedbacks .feedback-content .content:last-child {
@@ -1461,14 +2338,13 @@ footer {
         position: absolute;
         font-size: 30px;
         top: 2px;
-        left: 0px;
+        left: 23px;
     }
 
     .feedbacks .feedback-content .content .person-feedback {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        margin-bottom: 18px;
     }
 
     .feedbacks .feedback-content .content .person-feedback .person-name p:last-child {
@@ -1484,12 +2360,14 @@ footer {
     .feedbacks .feedback-content .content .person-feedback .avatar {
         width: 31px;
         height: 31px;
+        margin-bottom: 3px;
     }
 
-    .feedbacks .feedback-content .content .person-feedback .avatar img{
+    .feedbacks .feedback-content .content .person-feedback .avatar img {
         width: 100%;
         height: 100%;
     }
+
     /* End Feedback  */
 
 
@@ -1513,7 +2391,7 @@ footer {
         align-items: center;
     }
 
-    .footer .footer-content  .footer-section {
+    .footer .footer-content .footer-section {
         margin: 0;
         display: flex;
         flex-direction: column;
@@ -1565,6 +2443,7 @@ footer {
     .chatbox {
         display: none;
     }
+
     /* .chatbox {
         width: 316px;
         height: 50px;
@@ -1591,5 +2470,44 @@ footer {
         height: 30px;
         margin-right: 7px;
     } */
+
+}
+
+@media (max-width: 380px) {
+
+    /* Thanh thông tin trên cùng  */
+    .top-bar {
+        display: flex;
+        justify-content: center;
+    }
+
+    .right-info {
+        display: none;
+    }
+
+    /*End Thanh thông tin trên cùng */
+
+
+    /* Thanh sale  */
+    .sale {
+        font-size: 10px;
+    }
+}
+
+
+
+@media (max-width: 360px) {
+    .product-markdown .content-section {
+        padding: 0;
+        ;
+    }
+
+    .product-markdown .content-section .products .product-img {
+        width: 78px;
+        height: 50px;
+        margin-top: 7px;
+        margin-bottom: 0;
+    }
+
 
 }
